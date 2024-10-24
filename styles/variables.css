@@ -8,11 +8,11 @@
   --font-weight: 700;
   --line-height: 1.3;
   --bg-color: #000028;
-  --text-color: #353430;
+  --text-color: #f1b2ce;
   --accent-color: #ff0070;
   --hover-color: rgba(255, 0, 112, 0.4);
   --title-color: #db00ff;
   --color-text-decor: #000028;
-  --color-heading: #ff0070;
+  --color-heading:#FF0070;
   --background-image: url(../images/cover-image-dark.png);
 }

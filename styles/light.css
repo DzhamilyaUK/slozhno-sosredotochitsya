@@ -17,10 +17,6 @@
   --color-text-decor: #353430;
   --color-heading: #353430;
   --background-image: url(../images/cover-image-light.png);
-  background-position: top center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
 }
 
 .page.theme_light .header__rec {
@@ -33,6 +29,7 @@
   :root {
    --bg-color: #fff1f7;
   --text-decor: #353430;
+  --text-color: #353430;
   --accent-color: #ff8dcb;
   --hover-color: rgba(50, 49, 45, 0.4);
   --title-color:#ffc2e6;
