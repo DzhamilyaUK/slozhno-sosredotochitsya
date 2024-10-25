@@ -1,17 +1,17 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {/* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-font-family: 'IBM Plex Mono', monospace;
-font-size: var(--font-size, 18px);
-font-weight: 400;
-color: var(--text-color);
-line-height: var(--line-height, 1.3);
-margin: 0 auto;
-background-image: var(--background-image);
-background-position: top center;
-background-size: cover;
-background-attachment: fixed;
-background-repeat: no-repeat;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: var(--font-size, 18px);
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: var(--line-height, 1.3);
+  margin: 0 auto;
+  background-image: var(--background-image);
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 
@@ -277,7 +277,7 @@ background-repeat: no-repeat;
   display: grid;
   grid-template-columns: 1fr 2fr;
   column-gap: 10px;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 @media (width <= 767px) {
@@ -297,6 +297,7 @@ background-repeat: no-repeat;
 
 .content__why-section-list {
   display: flex;
+  row-gap: 20px;
   flex-grow: 1;
   flex-direction: column;
 }
@@ -325,7 +326,7 @@ background-repeat: no-repeat;
 
 .article-text {
   font-size: var(--font-size);
-  padding: 10px 0px 20px;
+  padding-top: 10px;
 }
 
 .content__attention-section {
@@ -377,7 +378,7 @@ background-repeat: no-repeat;
 }
 
 @media (width <= 767px) {
-concentrate-section {
+.concentrate-section {
   padding-bottom: 15px;
  }
 }
@@ -401,8 +402,8 @@ concentrate-section {
 .subtitle {
   color: var(--color-text-decor);
   background-color: var(--accent-color);
-  font-size: 400;
-  }
+  font-weight: 400;
+}
 
 .concentrate-section_articles {
   display: grid;
@@ -429,49 +430,36 @@ concentrate-section {
   }
 }
 
-.sunset_img {
-  grid-column: 1/3;
-  grid-row: 1/2;
+.image_item {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.sunset_img {
+  grid-column: 1/3;
+  grid-row: 1/2;
 }
 
 .ice-cream_img {
   grid-column: 3/4;
   grid-row: 1/3;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 
 .tape_img {
   grid-column: 1/2;
   grid-row: 2/4;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 
 .books_img {
   grid-column: 2/3;
   grid-row: 2/3;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 
 .street_img {
   grid-column: 2/4;
   grid-row: 3/4;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 
 
@@ -507,6 +495,6 @@ concentrate-section {
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   line-height: 0.9;
   color: var(--title-color);
-  text-shadow: 3px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
 
 }
