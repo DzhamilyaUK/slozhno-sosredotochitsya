@@ -284,7 +284,7 @@
   .content__why-section {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     column-gap: 18px;
   }
 }
@@ -496,5 +496,10 @@
   line-height: 0.9;
   color: var(--title-color);
   text-shadow: 2px 2px 0 var(--accent-color);
+}
 
+@media (width <= 767px) {
+  .footer__title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
 }
